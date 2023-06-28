@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- divinectorweb.com -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive User Profile Card using HTML and CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrapper1 row">
+      <button class="nav-toggle1">
+        <span class="icon-area1"></span>
+      </button>
+      
+      <nav class="nav1">
+        <ul>
+          <li><a href="MyProject/About/About.html">Про мене</a></li>
+          <li><a href="MyProject/index.html">Портфоліо</a></li>
+          <li><a href="MyProject/Telegram/telegram.html">Контакт</a></li>
+        </ul>            
+      </nav>
+    </div>
+  </header>
+
+  <div class="banner1">
+    <div class="content1">
+        <h2>Вітаю на моєму неофіційному сайті  </h2>
+        <p>З використанням bootstrap 5</p>
+        
+    </div>
+  </div>
+
+    <div class="wrapper">
+        <div class="user-card">
+            <div class="user-card-img">
+              <img src="MyProject/img/me.jpg" alt="">
+            </div>
+            <div class="user-card-info">
+              <h2>Нарижний Даниїл</h2>
+              <p><span>Пошта:</span> tttiop2289@gmail.com</p>
+              <p><span>Спеціальність:</span> Web Developer</p>
+              <p><span>About me:</span> <br>Просто Даніл, дуже рідко називають "Рижий".<br>Мабуть, чудом прийшов на 123 спеціальність, але <br>показує себе не зовсім погано.<br>Характер комунікабельний.<br>Не одружений.</p>
+            </div>
+        </div>
+    </div>
+      
+    <script>
+      const cusMenu = document.querySelector(".nav-toggle1");
+          const nav = document.querySelector(".nav1");
+
+          cusMenu.addEventListener("click1", () => {
+          nav.classList.toggle("openMenu1");
+      });
+    </script>
+</body>
+</html>
